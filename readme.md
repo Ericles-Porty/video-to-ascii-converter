@@ -21,7 +21,7 @@ mkdir frames
 
 4. Convert the video to frames
 ```bash
-ffmpeg -i sorriso-ronaldo.mp4 -vf scale=100:50,format=gray frames/frame_%04d.png
+ffmpeg -i sorriso_ronaldo.mp4 -vf scale=100:50,format=gray frames/frame_%04d.png
 ```
 
 5. Generate the ASCII frames

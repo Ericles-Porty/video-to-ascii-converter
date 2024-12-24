@@ -19,7 +19,6 @@ if __name__ == "__main__":
     else:
         frames = load_frames_from_file(ascii_dir)
 
-    # from gif_creator import create_gif
-    # create_gif("ascii", "bad_apple_ascii.gif", fps=30, max_seconds=5)
+
 
     display_frames(frames, fps)

@@ -48,7 +48,18 @@ python ascii_player.py --fps 60 --memory --ascii-dir ascii
 
 ## Demo
 
-![Demo](demos/demo_1.gif)
+The video is from Ronaldo's smile
 
-![Demo](demos/demo_1_ascii.gif)
+<img src="demos/demo_1.gif" width="400px">
 
+<img src="demos/demo_1_ascii.gif" width="400px">
+
+---
+
+The video is from Bad Apple
+
+<img src="demos/demo_2.gif" width="400px">
+
+<img src="demos/demo_2_ascii.gif" width="400px">
+
+---

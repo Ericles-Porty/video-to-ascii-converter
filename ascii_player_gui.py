@@ -15,7 +15,7 @@ def convert_video_to_frames(file_path):
     output_dir = "frames"
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
-    command = f"ffmpeg -i {file_path} -vf scale=100:50,format=gray {output_dir}/frame_%04d.png"
+    command = f'ffmpeg -i "{file_path}" -vf scale=100:50,format=gray {output_dir}/frame_%04d.png'
     subprocess.run(command, shell=True)
     sucess_message()
 

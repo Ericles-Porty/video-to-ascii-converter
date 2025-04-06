@@ -5,7 +5,7 @@ import os
 
 def image_to_ascii(image_path, width=100):
     chars = "@%#*+=-:. "  # Gradiente de intensidade
-    num_chars = len(chars)  # Número de caracteres disponíveis
+    num_chars = len(chars)
     scale_factor = 256 // num_chars  # Tamanho do intervalo para cada caractere
 
     img = Image.open(image_path).resize((width, width // 2)).convert("L")  # Redimensiona e converte para grayscale
@@ -19,12 +19,10 @@ def image_to_ascii(image_path, width=100):
     return ascii_img
 
 def convert_frames_to_ascii(frames_dir="frames", ascii_dir="ascii", width=100):
-    # Verifica se o diretório "frames" existe
     if not os.path.exists(frames_dir):
         no_directory_frames_found()
         return
 
-    # Converter todos os frames
     os.makedirs(ascii_dir, exist_ok=True)
 
     for file in sorted(os.listdir(frames_dir)):

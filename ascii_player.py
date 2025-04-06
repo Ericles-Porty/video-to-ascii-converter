@@ -5,7 +5,6 @@ from frame_loader import load_frames_from_file, load_frames_in_memory
 from terminal_utils import display_frames
 
 def run_ascii_player(fps, memory, ascii_dir="ascii"):
-    # Verifica se o diretório "ascii" existe
     if not os.path.isdir(ascii_dir):
         no_directory_ascii_found()
         return

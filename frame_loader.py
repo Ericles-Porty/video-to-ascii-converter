@@ -6,7 +6,7 @@ def load_frames_from_file(ascii_dir):
     frames = sorted(os.listdir(ascii_dir))
     for frame in frames:
         with open(f"{ascii_dir}/{frame}", "r") as f:
-            yield f.read()  # Gera cada frame como uma string
+            yield f.read()
 
 
 def load_frames_in_memory(ascii_dir):
